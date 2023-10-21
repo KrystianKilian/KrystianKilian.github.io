@@ -1,0 +1,66 @@
+body{
+   
+	justify-content: center;
+	background-color:wheat;
+	  }
+  
+table {
+	border-collapse: collapse;
+	width: 80%;
+    background-color: rgb(226, 199, 150);
+}
+th, td {
+	text-align: center;
+	padding: 8px;
+	border: 1px solid black;
+}
+
+th {
+	background-color: #cccccc;
+}
+
+
+input[type=text]{
+	width: 100px;
+	box-sizing: border-box;
+	
+	padding: 5px;
+	border-radius: 15px;
+	border: none;
+	text-align: center;
+}
+
+
+
+.btn {
+	background-color: pink;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	top: 50%;
+	left: 45%;
+    position: relative;
+}
+
+.btn:hover {
+	background-color: yellow;
+}
+
+
+
+
+  #myTable th {
+	background-color: lightblue;
+  }
+ 
+
+
+table td:last-child {
+	background-color : lightseagreen;
+  }
+
+  th:last-child, td:last-child {
+	width: 100px;
+}

@@ -1,0 +1,163 @@
+body
+{
+    background-color: moccasin;
+}
+
+#wrap
+{
+    min-width: 600px;
+}
+
+#black
+{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    top: 150px;
+    left: 550px;
+    position: relative;
+} 
+
+#green
+{
+
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 8px;
+    background-color: #3edd4b;
+    border-radius: 50%;
+    left:355px;
+    top:20px;
+    position:absolute;
+    z-index: 1;
+}
+
+#red
+{
+
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 8px;
+    background-color: #dd4b3e;
+    border-radius: 50%;
+    left:770px;
+    top: 20px;
+    position:absolute;
+    z-index: 1;
+}
+
+#yellow
+{
+
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 8px;
+    background-color: #ffea37;
+    border-radius: 50%;
+    left: 355px;
+    top: 325px;
+    position:absolute;
+    z-index: 1;
+}
+
+#blue
+{
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 8px;
+    background-color: #4b3edd;
+    border-radius: 50%;
+    top: 325px;
+    left: 770px;
+    z-index: 1;
+    position:absolute;
+}
+
+#score, #highscore
+{
+    width:25px;
+    height:20px;
+    background:#f2f2f2;
+    background-color: #ddd;
+    border-radius:4px;
+    padding:8px 5px 8px 5px;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Orbitron';
+}
+
+#start
+{
+    border-radius:4px;
+    background-color: #ddd;
+    padding:8px 5px 8px 5px;
+    border:1px solid #ddd;
+    font-family: 'Orbitron';
+}
+
+#buttons
+{
+    bottom: 30px;
+    left: 645px;
+    display:flex;
+    position: relative;
+    z-index: 2;
+    text-align: center; 
+    float:none;
+}
+
+#icon
+{
+
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    background-color: #dd4b3e;
+    border-radius: 50%;
+    left: 700px;
+    top: 350px;
+    position:absolute;
+    z-index: 1;
+}
+#name
+{
+    font-family: 'Orbitron';
+    position: absolute;
+    font-size: 170%;
+    bottom: 400px;
+    left: 100px;
+}
+
+#id
+{
+    font-family: 'Orbitron';
+    position: absolute;
+    font-size: 150%;
+    bottom: 375px;
+    left: 110px;
+}
+
+#status
+{
+    font-family: 'Orbitron';
+    position: absolute;
+    font-size: 150%;
+    top: 700px;
+    left: 525px;
+}

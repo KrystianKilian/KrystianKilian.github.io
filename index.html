@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystian Kilian - Introduction</title>
+    <meta name="author" content="Krystian Kilian ">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/ico" href="/Photos/K.png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="content-left">
+            <img id="flyImage" src="Photos/Me photo.jpg" alt="My Photo">
+        </div>
+        <div class="content-right">
+            <h1>Hello, I'm Krystian Kilian</h1>
+            <p>I'm currently an undergraduate student at Maynooth University, where I'm pursuing a degree in Computer Science and Software Engineering. I'm truly passionate about my field and constantly seeking to expand my knowledge and skills.</p>
+            <p>I am a third-year Computer Science student actively pursuing a six-month internship opportunity as a Software Engineer in the year 2024. My goal is to secure a position in a stimulating and demanding environment where I can apply my skills effectively and acquire valuable experience in programming within a professional setting.</p>
+        </div>
+        
+    </section>
+    
+
+    <section class="PerInfo">
+        <div class="left-column">
+            <ul>
+                <li><strong>Name:</strong> Krystian Kilian</li>
+                <li><strong>Address:</strong> 14 Cloran Court Athboy</li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <ul>
+                <li><strong>Email:</strong> krystiankilian9307@gmail.com</li>
+                <li><strong>Phone No:</strong> 0872515106</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Krystian Kilian</p>
+    </footer>
+
+    <script>
+        const flyImage = document.getElementById("flyImage");
+
+        let isFlying = false;
+
+        flyImage.addEventListener("click", () => {
+            if (!isFlying) {
+                isFlying = true;
+                const randomX = Math.floor(Math.random() * (window.innerWidth - flyImage.width));
+                const randomY = Math.floor(Math.random() * (window.innerHeight - flyImage.height));
+
+                flyImage.style.transition = "transform 1s ease"; // Set the transition for smooth movement
+                flyImage.style.transform = `translate(${randomX}px, ${randomY}px) rotate(360deg)`;
+                
+                // After the animation is complete, reset the image to its original position
+                setTimeout(() => {
+                    flyImage.style.transition = "transform 0.3s ease"; // Restore the original transition
+                    flyImage.style.transform = "translate(0, 0) rotate(0deg)";
+                    isFlying = false;
+                }, 1000); // Adjust the duration to match the animation duration
+            }
+        });
+    </script>
+    
+
+
+</body>
+
+
+
+</html>

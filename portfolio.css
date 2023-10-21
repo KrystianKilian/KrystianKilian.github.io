@@ -1,0 +1,176 @@
+/* Style for the entire body, center content within 70% width */
+body {
+    width: 70%;
+    margin: 40px auto 0;
+    background-image: url("Photos/ch.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom; /* This line adjusts the background position */
+}
+
+
+/* Style for the header and navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-size: 30px;
+}
+
+/* Style for the content section */
+.content {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 26px;
+    margin: 20px 0;
+    color:orange;
+}
+
+/* Add a border to the project images */
+.project {
+    flex-basis: calc(48% - 20px); /* Set the width to 48% for two items side by side */
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.3s;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.project h2 {
+    font-size: 20px;
+}
+
+/* Style for the project gallery */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.3s;
+    cursor: pointer; /* Set cursor to pointer here */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 243, 243, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.project:hover {
+    filter: grayscale(100%);
+}
+
+.project:hover .project-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-text p {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/* Style for the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto; /* Adjust the top margin to 10% or any value that suits your design */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 70%;
+}
+
+
+/* Close button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #888;
+}
+
+/* Style for the iframe (adjust as needed) */
+#projectFrame {
+    width: 100%;
+    height: 80vh; /* Adjust the height as needed */
+}

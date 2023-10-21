@@ -1,0 +1,115 @@
+/* Style for the entire body, center content within 70% width */
+body {
+    width: 70%;
+    margin: 40px auto 0;
+    background-image: url("Photos/cal.jpg"); /* Set the background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ... (other CSS rules) ... */
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-size: 30px;
+}
+
+.content {
+    margin-top: 20px; /*space between header and content*/
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with 0% transparency (fully transparent) */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Create space between image and text */
+    text-align: center;
+    padding:60px; /* Add padding to create space between header and content */
+    border-radius: 30px;
+}
+
+/* Style for the "Me Photo" */
+.content-left img {
+    width: 60%;
+    height: 60%;
+    border-radius: 40px;
+    border: 5px solid orange;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.content-left img:hover {
+    transform: scale(1.2);
+    pointer-events: auto; /* Add this line to allow hover events after the animation */
+}
+
+
+.content-right {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    font-size: 24px;
+    text-align: center;/*centre*/
+    color: orange;
+}
+
+.PerInfo {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with 0% transparency (fully transparent) */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    color: orange;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically within each column */
+}
+
+.left-column ul,
+.right-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column li,
+.right-column li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.right-column a {
+    color: orange;
+    text-decoration: none;
+}
+/* Style for the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+

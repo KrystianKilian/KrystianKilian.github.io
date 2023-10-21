@@ -1,0 +1,98 @@
+/* Your existing styles */
+body {
+    width: 70%;
+    margin: 40px auto 0;
+    background-image: url("Photos/lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-size: 30px;
+}
+
+/* Center the contact section */
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* You can adjust the height as needed */
+  }
+  
+ 
+.contact-info {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
+  
+  /* Apply the push-in effect on hover */
+  .contact-info:hover {
+    transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  /* Style the contact items (email, LinkedIn, phone) */
+  .contact-item {
+    margin-bottom: 15px;
+  }
+  
+  /* Style icons inside contact items */
+  .contact-item i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin-right: 10px;
+  }
+  
+  /* Style links inside contact items */
+  .contact-item a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-weight: bold;
+  }
+  
+  .contact-item a:hover {
+    color: #007bff; /* Link color on hover (blue in this example) */
+  }
+  /* Style the contact items (email, LinkedIn, phone) */
+.contact-item {
+    margin-bottom: 15px;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+  }
+  
+  /* Apply the push-back effect on hover */
+  .contact-item:hover {
+    transform: translate(0, -5px); /* Move the card 5px upwards on hover */
+  }
+  
+/* Style for the footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}

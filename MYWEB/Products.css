@@ -1,0 +1,237 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set box-sizing to border-box to include padding and border in element width */
+  /* Reset margin and padding on all elements to 0 */
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: red;
+  }
+  
+  nav {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  nav a {
+    color: white;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .nav-icons li a {
+    text-decoration: none;
+  }
+  
+  .search-box{
+    position: relative;
+  }
+  
+  .search-box .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition:0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+  
+  .search-box:hover .search-txt {
+    width: 240px;
+    padding: 0 6px;
+  }
+  
+  .search-box .search-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+  }
+  
+  .search-box:hover .search-btn {
+    background: black;
+    color: white;
+  }
+  
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center; /* Centers items horizontally */
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  /* Display 3 products per row on screens with minimum width of 768px */
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Product container */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items vertically */
+  border: 15px solid black;
+  padding: 0px;/*size of picture fitting*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+  background-color: black;
+}
+
+/* Product image */
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Product name */
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Product price */
+.product-price {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+.product-btn {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+  
+  footer {
+    margin-top: 5px; /* adds a gap between the two footers */
+  }
+  
+  .footer-top {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: -8px;
+    height: 10px;
+    
+  }
+  
+  .footer-top-left img {
+    height:10px;
+    max-width: 100%;
+  }
+  
+  .footer-top-right ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+  
+  .footer-top-right li {
+    margin-left: 20px;
+  }
+  
+  .footer-top-right li:first-child {
+    margin-left: 0;
+  }
+  
+  .footer-top-right a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-top-right a:hover {
+    color: #ccc;
+  }
+  
+  .footer-top-right .social-icons {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .footer-top-right .social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  .footer-top-right .social-icons a:hover {
+    color: grey;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    background-color: white;
+    padding: 20px;
+    height: 30px;
+  }
+  
+  .footer-bottom img {
+    height: 30px;
+  }
+  
+  
+  
